@@ -67,6 +67,7 @@ h2 {
 
 p {
   margin-top: 0;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -144,6 +145,46 @@ p {
   .title__animation {
     font-size: 9.7rem;
   }
+}
+
+/* Collapsibles */
+
+.collapsible {
+  background: var(--color-primary);
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  padding: 1.5rem 3rem;
+}
+
+.collapsible__content {
+  max-height: 0vh;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  padding-left: 3rem;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  padding: 3rem;
+}
+
+.about-me__heading {
+}
+
+/* About Me */
+
+.about-me {
+  background: var(--color-primary);
+  padding: 3rem;
 }
 
 /* Links */
@@ -694,7 +735,6 @@ a {
 
 .collapsible__heading {
   margin-top: 0;
-  font-size: 3rem;
 }
 
 .collapisble__chevron {
