@@ -15,10 +15,21 @@
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
 /* Typography */
 
 ::selection {
@@ -89,7 +100,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 450px;
   padding: 2rem 0 4rem 0;
 }
 
@@ -119,7 +129,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .title {
-    max-width: 700px;
     padding: 4rem 0 10rem 0;
   }
   .title__animation {
@@ -129,7 +138,6 @@ p {
 
 @media screen and (min-width: 1024px) {
   .title {
-    max-width: 1000px;
     padding: 4rem 0 12rem 0;
   }
 
