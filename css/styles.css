@@ -71,6 +71,18 @@ p {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: .2rem;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+
 @media screen and (min-width: 768px) {
   body {
     font-size: 2.1rem;
@@ -246,57 +258,34 @@ ul {
   font-weight: 300;
 }
 
-
+/* Test Box */
 
 .test-box {
   background: var(--color-primary);
-  padding:3rem;
+  padding: 1rem;
+  width: 100%;
 }
 
-/* Good use of nesting ^ (Try to avoid nesting) */
 
-/* 
+/* Contact Me Form */
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
 /* Icons */
 .icon {
   width: 40px;
   height: 40px;
+  color: var(--color-accent); 
 }
 
-.icon--small {
-  width: 30px;
-  height: 30px;
-}
 
-.icon--primary {
-  fill: var(--color-primary);
-}
 
-.icon--white {
-  fill: white;
-}
 
-.icon-container {
-  background: #f3f9fa;
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-containter--accent {
-  background: var(--color-accent);
-}
-
-.icon-container--footer {
-  background: #393939;
-}
-
-.icon--collapsible {
-  background: #232323;
-  border-radius: 100%;
-}
 
 /* Buttons */
 
