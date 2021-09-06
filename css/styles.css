@@ -68,6 +68,7 @@ h2 {
 p {
   margin-top: 0;
   color: #fff;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -209,99 +210,52 @@ p {
   /* padding: 5%; */
 }
 
-/* Links */
 
-a {
-  text-decoration: none;
-}
+/* CV Box */
 
-.link-arrow {
-  color: var(--color-accent);
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.link-arrow::after {
-  content: "-->";
-  margin-left: 5px;
-  transition: margin 0.15s;
-}
-
-.link-arrow:hover::after {
-  margin-left: 10px;
-}
-
-@media screen and (min-width: 1024px) {
-  .link-arrow {
-    font-size: 1.5rem;
-  }
-}
-
-/* Badges */
-
-.badge {
-  border-radius: 20px;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 0.5rem 2rem;
-  white-space: nowrap;
-}
-
-.badge--primary {
-  background: var(--color-primary);
-  color: white;
-}
-
-.badge--secondary {
-  background: var(--color-secondary);
-  color: white;
-}
-
-.badge--small {
-  font-size: 1.6rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .badge {
-    font-size: 1.5rem;
-  }
-
-  .badge--small {
-    font-size: 1.2rem;
-    padding: 0.5rem 1.5rem;
-  }
+.cv-box {
+  background: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 /* Lists */
 
+ul {
+  padding: 3rem;
+  margin: 0;
+  /* margin: 6rem 0 6rem 0; */
+}
+
 .list {
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 3rem; */
+  color: #fff;
+  font-weight:600;
+  letter-spacing: .2rem;
+  /* line-height: 5rem; */
+  font-size: 2rem;
 }
 
-.list--inline .list__item {
-  display: inline-block;
-  margin-right: 2rem;
+.list__item {
+  padding-bottom: 1.5rem;
 }
 
-.list--tick {
-  list-style-image: url(../images/tick.svg);
-  padding-left: 3rem;
-  color: var(--color-headings);
+.list__item-first-word {
+  font-weight: 300;
 }
 
-.list--tick .list__item {
-  padding-left: 0.5rem;
-  margin-bottom: 1rem;
+
+
+.test-box {
+  background: var(--color-primary);
+  padding:3rem;
 }
+
 /* Good use of nesting ^ (Try to avoid nesting) */
 
-@media screen and (min-width: 1024px) {
-  .list--tick .list__item {
-    padding-left: 0;
-  }
-}
+/* 
 /* Icons */
 .icon {
   width: 40px;
@@ -1118,4 +1072,4 @@ a {
 
 .callout-signup {
   transform: translateY(5rem);
-}
+} */
