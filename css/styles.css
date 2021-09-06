@@ -177,15 +177,18 @@ p {
   padding: 3rem;
 }
 
-.about-me__heading {
-}
-
 /* About Me */
 
 .about-me {
   background: var(--color-primary);
   padding: 3rem;
 }
+
+.about-me__heading {
+  color: var(--color-accent);
+}
+
+/* Showreel */
 
 /* Links */
 
