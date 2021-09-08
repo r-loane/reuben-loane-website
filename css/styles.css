@@ -503,3 +503,41 @@ ul {
     letter-spacing: 1rem;
   }
 }
+
+/* Footer */
+
+.card--footer h2 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__footer {
+    justify-content: left;
+  }
+  .third-container {
+    margin-top: 0.5rem;
+  }
+
+  .card--footer {
+    margin-top: 3rem;
+  }
+
+  .card--footer h2 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card--footer {
+    margin-top: 3rem;
+  }
+
+  .card--footer h2 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    line-height: 4.9rem;
+  }
+}
