@@ -1,4 +1,4 @@
-@import "./normalize.css";
+@import "...css/normalize.css";
 
 :root {
   --color-primary: #48b842;
@@ -180,18 +180,28 @@ a:hover {
 
 .collapsible__content {
   background: var(--color-primary);
-  /* max-height: 0vh; */
-  overflow: visible;
+  max-height: 0vh;
+  overflow: hidden;
   opacity: 0;
-  transition: all 0.2s;
+  transition: all 0.3s;
   padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .collapsible--expanded .collapsible__content {
-  /* max-height: 100vh; */
+  max-height: 100vh;
   opacity: 1;
   padding: 3rem;
+}
+
+/* About Me */
+
+.about-me {
+  background: var(--color-primary);
+  padding: 3rem;
+}
+
+.about-me__heading {
+  color: var(--color-accent);
 }
 
 /* Showreel */
@@ -286,40 +296,73 @@ ul {
   width: 100%;
 }
 
-/* About Me */
+/* Grids */
 
-.about-me {
+.grid {
+  display: grid;
+  gap: 6rem;
+}
+
+.grid--1x2 {
+  grid-template-columns: 2fr 3fr;
+
+  font-size: 2rem;
+  font-weight: 200;
+  /* justify-items:center; */
+  /* max-width: 730px;
+    margin: 0 auto; */
+}
+
+/* .coll-about-me {
+    grid-row-end: 3;
+  } */
+
+.box {
+  grid-column-start: 2;
+}
+.coll-about-me {
+  /* min-height: 10rem; */
+  /* background: var(--color-primary); */
+  grid-row-start: 1;
+  /* grid-row-end: 3; */
+  width: 40rem;
+  margin: auto;
+}
+
+.collapsible--expanded {
+}
+
+.collapsible--expanded.coll-about-me {
   background: var(--color-primary);
-  padding: 0 2rem;
-  padding-right: 1rem;
+  height: auto;
 }
 
-.about-me__heading {
-  /* color: var(--color-accent); */
+.about-me--heading {
+  font-size: 8rem;
+  text-align: left;
 }
 
-/* Collapsible About Me */
-
-.card--about-me h2 {
-  color: var(--color-accent);
+.coll-cv {
+  /* height: 30rem; */
 }
 
-@media screen and (min-width: 768px) {
-  .about-me {
-    padding: 0 0rem;
-    padding-right: 0;
-  }
+.contact-soc {
+  margin-top: 3rem;
+  grid-template-columns: 3fr 1fr;
+}
 
-  .card--about-me {
-    max-width: 40rem;
-  }
+.coll-soc {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
 
-  .card--about-me h2 {
-    font-size: 7rem;
-    text-align: left;
-  }
+.wrapper {
+  display: flex;
+}
 
-  .collapsible.card--about-me {
-    height: 100%;
-  }
+.second-wrapper {
+  flex-direction: column;
+  margin-left: 5rem;
+  justify-self: flex-end;
 }
