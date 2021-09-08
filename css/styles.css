@@ -15,19 +15,21 @@
 }
 
 .container {
-  max-width: 450px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 690px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 900px;
+    max-width: 845px;
   }
 }
 /* Typography */
@@ -162,9 +164,9 @@ a:hover {
 /* Collapsibles */
 
 .collapsible {
-  /* width: 100%; */
+  width: 100%;
   cursor: pointer;
-  /* height: 10rem; */
+  /* min-height: 20rem; */
 }
 
 .collapsible__header {
@@ -180,8 +182,8 @@ a:hover {
 
 .collapsible__content {
   background: var(--color-primary);
-  /* max-height: 0vh; */
-  overflow: visible;
+  max-height: 0vh;
+  overflow: hidden;
   opacity: 0;
   transition: all 0.2s;
   padding-left: 3rem;
@@ -189,39 +191,9 @@ a:hover {
 }
 
 .collapsible--expanded .collapsible__content {
-  /* max-height: 100vh; */
+  max-height: 500vh;
   opacity: 1;
   padding: 3rem;
-}
-
-/* Showreel */
-
-.showreel-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-  margin: auto;
-}
-
-.youtube-showreel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  /* padding: 5%; */
-}
-
-/* CV Box */
-
-.cv-box {
-  background: var(--color-accent);
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
 }
 
 /* Lists */
@@ -298,28 +270,165 @@ ul {
   /* color: var(--color-accent); */
 }
 
-/* Collapsible About Me */
+/* About Me Card */
 
 .card--about-me h2 {
-  color: var(--color-accent);
+  font-size: 3rem;
+
+  letter-spacing: 1rem;
 }
 
 @media screen and (min-width: 768px) {
+  .card--about-me {
+    max-width: 22.5rem;
+  }
+
+  .card--about-me h2 {
+    font-size: 5rem;
+    letter-spacing: 0;
+    text-align: left;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* .collapsible.card--about-me {
+    height: 100%;
+  } */
+
   .about-me {
     padding: 0 0rem;
     padding-right: 0;
   }
+}
 
+@media screen and (min-width: 1024px) {
   .card--about-me {
-    max-width: 40rem;
+    max-width: 30rem;
   }
 
   .card--about-me h2 {
     font-size: 7rem;
     text-align: left;
-  }
-
-  .collapsible.card--about-me {
-    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
   }
 }
+
+.wrapper--showreel-cv {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Showreel */
+
+.showreel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: auto;
+}
+
+.youtube-showreel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* padding: 5%; */
+}
+
+/* Showreel Card */
+
+.card--showreel h2 {
+  color: var(--color-accent);
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card--showreel {
+    max-width: 42.5rem;
+  }
+
+  .card--showreel h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card--showreel {
+    max-width: 60rem;
+  }
+
+  .card--showreel h2 {
+    font-size: 6.5rem;
+  }
+}
+
+/* CV Box */
+
+.cv--boxes {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 60rem;
+}
+
+.cv-box {
+  background: var(--color-accent);
+  /* display: flex; */
+  justify-content: center;
+  margin-bottom: 3rem;
+  /* height: 10rem; */
+}
+
+/* CV Card */
+
+.card--cv h2 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card--cv {
+    max-width: 42.5rem;
+    margin-top: 3rem;
+  }
+
+  .card--cv h2 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card--cv {
+    max-width: 60rem;
+    margin-top: 3rem;
+  }
+
+  .card--cv h2 {
+    font-size: 6.5rem;
+    letter-spacing: 1rem;
+  }
+}
+
+/* Contact Me and Social media */
+
+.second-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .second-container {
+    flex-direction: row;
+  }
+}
+
+/* Social */
