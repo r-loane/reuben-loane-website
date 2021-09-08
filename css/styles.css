@@ -60,7 +60,7 @@ h3 {
 }
 
 h1 {
-  font-size: 8.4rem;
+  font-size: 7rem;
 }
 
 h2 {
@@ -115,7 +115,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0 4rem 0;
+  /* padding: 2rem 0 4rem 0; */
 }
 
 .title__reuben::first-letter {
@@ -135,16 +135,19 @@ a:hover {
 }
 
 .title__animation {
-  font-size: 5.7rem;
+  font-size: 4.5rem;
 }
 
 .title__animation:hover {
   color: var(--color-accent);
 }
 
+/* @media screem and (max-width: 320px) {
+} */
+
 @media screen and (min-width: 768px) {
   .title {
-    padding: 4rem 0 10rem 0;
+    padding: 4rem 9.5rem 10rem 9.5rem;
   }
   .title__animation {
     font-size: 8rem;
@@ -153,7 +156,7 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
   .title {
-    padding: 4rem 0 12rem 0;
+    padding: 4rem 11.5rem 12rem 11.5rem;
   }
 
   .title__animation {
@@ -178,6 +181,10 @@ a:hover {
 .collapsible__heading {
   margin-top: 0;
   padding: 1.5rem 3rem;
+}
+
+.collapsible__heading:hover {
+  color: var(--color-accent);
 }
 
 .collapsible__content {
@@ -251,6 +258,10 @@ ul {
   /* width: 100%; */
 }
 
+.first-container {
+  margin-top: 3rem;
+}
+
 /* About Me */
 
 .about-me {
@@ -269,6 +280,10 @@ ul {
   font-size: 3rem;
   color: var(--color-accent);
   letter-spacing: 1rem;
+}
+
+.card--about-me h2:hover {
+  color: var(--color-secondary);
 }
 
 @media screen and (min-width: 768px) {
@@ -439,6 +454,10 @@ ul {
   letter-spacing: 1rem;
 }
 
+.card--social-media h2:hover {
+  color: var(--color-secondary);
+}
+
 @media screen and (min-width: 768px) {
   .card--social-media {
     max-width: 21rem;
@@ -511,6 +530,10 @@ ul {
   letter-spacing: 1rem;
 }
 
+.third-container {
+  margin-top: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   .header__footer {
     justify-content: left;
@@ -530,9 +553,10 @@ ul {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .card--footer {
     margin-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .card--footer h2 {
