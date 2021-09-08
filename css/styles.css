@@ -238,24 +238,17 @@ ul {
   text-align: center;
 }
 
-.social-media {
-  display: flex;
-  padding: 3rem;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
 /* Icons */
 .icon {
-  width: 40px;
-  height: 40px;
-  color: var(--color-accent);
+  /* width: 40px;
+  height: 40px; */
+  color: var(--color-secondary);
 }
 
 .social-media__icon {
   font-size: 5rem;
-  width: 100%;
+  padding-bottom: 2rem;
+  /* width: 100%; */
 }
 
 /* About Me */
@@ -274,7 +267,7 @@ ul {
 
 .card--about-me h2 {
   font-size: 3rem;
-
+  color: var(--color-accent);
   letter-spacing: 1rem;
 }
 
@@ -343,7 +336,6 @@ ul {
 /* Showreel Card */
 
 .card--showreel h2 {
-  color: var(--color-accent);
   font-size: 3rem;
   letter-spacing: 1rem;
 }
@@ -419,7 +411,6 @@ ul {
 /* Contact Me and Social media */
 
 .second-container {
-  margin-top: 4rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -427,8 +418,88 @@ ul {
 
 @media screen and (min-width: 768px) {
   .second-container {
+    margin-top: 0.5rem;
     flex-direction: row;
   }
 }
 
 /* Social */
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.card--social-media h2 {
+  color: var(--color-accent);
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card--social-media {
+    max-width: 21rem;
+    margin-top: 3rem;
+  }
+
+  .card--social-media h2 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card--social-media {
+    max-width: 21rem;
+    margin-top: 3rem;
+  }
+
+  .card--social-media h2 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    line-height: 4.9rem;
+  }
+}
+
+/* Contact Me */
+
+.contact-information {
+  line-height: 5rem;
+}
+
+.card--contact-me h2 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.contact-me__icon {
+  color: var(--color-accent);
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card--contact-me {
+    max-width: 45rem;
+    margin-top: 3rem;
+  }
+
+  .card--contact-me h2 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card--contact-me {
+    max-width: 60rem;
+    margin-top: 3rem;
+  }
+
+  .card--contact-me h2 {
+    font-size: 6.5rem;
+    letter-spacing: 1rem;
+  }
+}
