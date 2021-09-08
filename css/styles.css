@@ -32,6 +32,20 @@
     max-width: 845px;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-primary); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
 /* Typography */
 
 ::selection {
@@ -329,7 +343,27 @@ ul {
 
 /* Showreel */
 
-.showreel-container {
+.collapsible .showreel-container {
+  position: relative;
+  overflow: hidden;
+  width: 0rem;
+  padding-top: 56.25%;
+  margin: auto;
+}
+
+.collapsible .youtube-showreel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 0rem;
+  height: 0rem
+  /* padding: 5%; */
+}
+
+
+.collapsible--expanded .showreel-container {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -337,7 +371,7 @@ ul {
   margin: auto;
 }
 
-.youtube-showreel {
+.collapsible--expanded .youtube-showreel {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,6 +381,8 @@ ul {
   height: 100%;
   /* padding: 5%; */
 }
+
+
 
 /* Showreel Card */
 
@@ -390,6 +426,30 @@ ul {
   justify-content: center;
   margin-bottom: 3rem;
   /* height: 10rem; */
+}
+
+li:first-child {
+  color: var(--color-select);
+  font-size: 2.5rem;
+
+}
+
+.cv--boxes::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.cv--boxes::-webkit-scrollbar-track {
+  background: none; /* color of the tracking area */
+}
+
+.cv--boxes::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--color-primary); creates padding around scroll thumb
+}
+
+.cv--boxes::-webkit-scrollbar-corner {
+  background: none;
 }
 
 /* CV Card */
