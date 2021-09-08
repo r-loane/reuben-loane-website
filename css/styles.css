@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--color-primary); /* color of the tracking area */
+  /* background: var(--color-primary); color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -358,10 +358,10 @@ ul {
   bottom: 0;
   right: 0;
   width: 0rem;
-  height: 0rem
+  height: 0rem;
+
   /* padding: 5%; */
 }
-
 
 .collapsible--expanded .showreel-container {
   position: relative;
@@ -379,10 +379,9 @@ ul {
   right: 0;
   width: 100%;
   height: 100%;
+  border: 0;
   /* padding: 5%; */
 }
-
-
 
 /* Showreel Card */
 
@@ -431,7 +430,6 @@ ul {
 li:first-child {
   color: var(--color-select);
   font-size: 2.5rem;
-
 }
 
 .cv--boxes::-webkit-scrollbar {
@@ -445,7 +443,7 @@ li:first-child {
 .cv--boxes::-webkit-scrollbar-thumb {
   background-color: var(--color-secondary); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid var(--color-primary); creates padding around scroll thumb
+  border: 3px solid var(--color-primary); /* creates padding around scroll thumb */
 }
 
 .cv--boxes::-webkit-scrollbar-corner {
